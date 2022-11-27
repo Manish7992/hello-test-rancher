@@ -14,7 +14,6 @@ RUN npm ci
 
 COPY . ./
 
-RUN npm test
 
 FROM node:17-alpine3.14 as prod
 
