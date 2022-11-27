@@ -1,4 +1,3 @@
-//folder name from mindbowser-devops-files repository
 pipeline {
     agent any
     stages 
