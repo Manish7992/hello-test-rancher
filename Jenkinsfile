@@ -22,7 +22,7 @@ pipeline {
         stage('Pushing to Docker Hub') {              
         steps{
             script {
-                
+                    sh " rm -rf hello-test-rancher "
                     sh " git clone https://github.com/Manish7992/hello-test-rancher.git"
                     sh " cd hello-test-rancher/hello-rancher"
                     sh "docker build -t manish8757/rancher:${GIT_COMMIT} hello-test-rancher/hello-rancher"
