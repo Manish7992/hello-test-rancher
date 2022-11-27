@@ -28,7 +28,7 @@ app.get('/', async (req, res) => {
     res.send(out)
     return
   }
-  const out = `Hello ${target}! I am at version: ${pkg.version}.`
+  const out = `Hello Manish ${target}! I am at version: ${pkg.version}.`
   if (informant) {
     try {
       console.log(`servant asking informant: `, informant)
